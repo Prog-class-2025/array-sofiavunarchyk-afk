@@ -221,8 +221,10 @@ namespace Project1 {
 			for (int i = 0; i < 5; i++)
 				for (int j = i + 1; j < 5; j++)
 				{
-				// ξαμ³ν ελεμενς³β
-				
+					int temp = matrix[i][j];
+					matrix[i][j] = matrix[j][i];
+					matrix[j][i] = temp;
+
 				}
 
 			dataGridView1->ColumnCount = 5;
