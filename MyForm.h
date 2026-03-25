@@ -176,14 +176,14 @@ namespace Project1 {
 
 		if (comboBox1->SelectedIndex == 4) // Парні/непарні
 		{
-			int evenCount = 0, oddCount = 0;
+			int p = 0, n = 0;
 			for (int i = 0; i < 5; i++) 
 				if (mas1[i] % 2 == 0) 
-					evenCount++; 
+					p++; 
 				else 
-					oddCount++;
+					n++;
 
-			label1->Text = "Парні: " + evenCount.ToString() + ", Непарні: " + oddCount.ToString();
+			label1->Text = "Парні: " + p.ToString() + ", Непарні: " + n.ToString();
 		}
 		if (comboBox1->SelectedIndex == 5) // Заповнити матрицю
 		{
